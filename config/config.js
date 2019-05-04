@@ -80,15 +80,6 @@ Main's SSL deploy script from Let's Encrypt looks like:
 */
 
 /**
- * proxyip - proxy IPs with trusted X-Forwarded-For headers
- *   This can be either false (meaning not to trust any proxies) or an array
- *   of strings. Each string should be either an IP address or a subnet given
- *   in CIDR notation. You should usually leave this as `false` unless you
- *   know what you are doing.
- */
-exports.proxyip = false;
-
-/**
  * ofe - write heapdumps if sockets.js workers run out of memory.
  *   If you wish to enable this, you will need to install node-oom-heapdump,
  *   as it is sometimes not installed by default:
